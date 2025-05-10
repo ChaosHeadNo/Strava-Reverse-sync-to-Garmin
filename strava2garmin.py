@@ -58,9 +58,9 @@ class StravaApi:
     def _refresh_token(self):
         resoure_list_url = " https://www.strava.com/oauth/token"
         data = {
-            'client_id': self.clientid,
-            'client_secret': self.clientsecret,
-            'refresh_token': self.refresh_token,
+            'client_id': "client_id", #脚本用户填写""内内容
+            'client_secret': "client_secret", #脚本用户填写""内内容
+            'refresh_token': "refresh_token", #脚本用户填写""内内容
             'grant_type': "refresh_token",
             'f': 'json'
         }
@@ -307,11 +307,11 @@ def refresh_tasks():
 
 
 if __name__ == "__main__":
-    body = SqlBody(strava_id="your strava id",
-                   strava_clientsecret="your strava client secret",
-                   strava_refresh_token="your strava refresh token",
-                   garmin_user="your garmin user",
-                   garmin_password="your garmin password",
+    body = SqlBody(strava_id="your strava id", #脚本用户填写""内内容
+                   strava_clientsecret="your strava client secret", #脚本用户填写""内内容
+                   strava_refresh_token="your strava refresh token", #脚本用户填写""内内容
+                   garmin_user="your garmin user", #脚本用户填写""内内容
+                   garmin_password="your garmin password", #脚本用户填写""内内容
                    email=None, #脚本用户不需要填写, no need to modify
                    password="",#脚本用户不需要填写, no need to modify 
                    garmin_location="China") #国际服些global，国服写China。  (global/china)
