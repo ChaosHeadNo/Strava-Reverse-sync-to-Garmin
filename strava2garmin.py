@@ -314,7 +314,7 @@ if __name__ == "__main__":
                    garmin_password="your garmin password",
                    email=None, #脚本用户不需要填写, no need to modify
                    password="",#脚本用户不需要填写, no need to modify 
-                   garmin_location="global") #国际服些global，国服写china。  (global/china)
+                   garmin_location="China") #国际服些global，国服写China。  (global/china)
     gar = SycTask(body)
     print(gar.upload_activity_to_garmin())
 
